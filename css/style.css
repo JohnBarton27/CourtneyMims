@@ -488,10 +488,10 @@ html.ie7 .icon-home {
 
 /* 5. Intro */
 .home-block {
-	background: #fff url(../images/photo-img.jpg) no-repeat top left;
+	background: #fff url(../images/Courtney_EG_FSU_UF.jpg) no-repeat top left;
 	color: #58585a;
 	height: 100%;
-	float: left;
+	float: right;
 	left: 0;
 	position: absolute;
 	width: 100%;
@@ -499,7 +499,7 @@ html.ie7 .icon-home {
 	background-size:cover
 }
 .home-block h1 {
-	color: #333;
+	color: #133DA6;
 	/* font-family: sans-serif; */
 	font-size: 66px;
 	font-weight: 600;
