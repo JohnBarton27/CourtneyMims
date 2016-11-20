@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prime Responsive Portfolio Template</title>
+<title>Courtney Mims</title>
 <!-- CSS  -->
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -22,12 +22,12 @@
     <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 home">
       <div class="home-block">
         <div class="social-buttons"> 
-        <a class="facebook" href="#" target="_blank"></a>
-        <a class="twitter" href="#" target="_blank"></a>
-        <a class="google-plus" href="#" target="_blank"></a>
+        <!--<a class="facebook" href="#" target="_blank"></a>-->
+        <a class="twitter" href="https://twitter.com/MimsCourtney" target="_blank"></a>
+        <!--<a class="google-plus" href="#" target="_blank"></a>
         <a class="rss" href="#" target="_blank"></a>
-        <a class="pintrest" href="#" target="_blank"></a>
-        <a class="linkedin" href="#" target="_blank"></a>
+        <a class="pintrest" href="#" target="_blank"></a>-->
+        <a class="linkedin" href="http://www.linkedin.com/in/mimsthejournalistfloridaneeds" target="_blank"></a>
  
         </div>
         
@@ -47,17 +47,17 @@
     <div class="col-lg-5 ol-md-5 col-sm-12 col-xs-12">
       <div class="colours tk-museo-sans stuck "> 
       <a href="#" class="colour_link who_we_are" data-current="false">
-      <span data-colour="#f2b701" data-name="about_us" class="colour" >
+      <span data-colour="#ff8049" data-name="about_us" class="colour" >
       <span>
       <i class="menu-img icon-user"></i>
-       About Us
+       About Courtney
    
        </span>
        </span>
         </a> 
        
        <a href="#" class="colour_link guestbook" data-current="false">
-       <span data-colour="#dc0030" data-name="what_we_do" class="colour" >
+       <span data-colour="#e0a855" data-name="what_we_do" class="colour" >
        <span>
         <i class="menu-img icon-settings"></i>
         What We do
@@ -67,7 +67,7 @@
         </a>
         
         <a href="#" class="colour_link products" data-current="false">
-        <span data-colour="#7c378a" data-name="products" class="colour">
+        <span data-colour="#84bcda" data-name="products" class="colour">
         <span>
         <i class="menu-img icon-briefcase"></i>
         Work
@@ -77,7 +77,7 @@
         </a>
         
         <a href="#" class="colour_link faqs" data-current="false">
-        <span data-colour="#3465aa" data-name="contact_us" class="colour" >
+        <span data-colour="#9bd1e5" data-name="contact_us" class="colour" >
         <span>
         <i class="menu-img icon-envelope"></i>
         Contact Us
@@ -87,7 +87,7 @@
         </a>
         
         <a href="#" class="colour_link blog" data-current="false">
-        <span data-colour="#7cb854" data-name="blog" class="colour" >
+        <span data-colour="#6a8eae" data-name="blog" class="colour" >
         <span>
         <i class="menu-img icon-bubbles"></i>
         Blog
@@ -267,6 +267,8 @@
 <div class="paragraphs tk-source-sans-pro">
 <div class="normal-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla. Donec a neque libero. Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. </div>
 
+<div id="waveform"></div>
+    
 <h1 class="tk-source-sans-pro"></h1>
 <div class="portfolio paragraphs tk-source-sans-pro" id="portfolio">
   <div class="container-fluid">
@@ -443,5 +445,16 @@
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/wavesurfer.min.js"></script>
+    
+<script>
+var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: 'violet',
+    progressColor: 'purple'
+});
+    wavesurfer.load('/assets/052316_Courtney_Mims_Scoreboard_Update.mp3');
+</script>
+
 </body>
 </html>
