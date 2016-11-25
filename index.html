@@ -261,7 +261,7 @@
 <!-- work -->
 <div class="products hidden">
 <div class="page_name tk-museo-sans">Work</div>
-<h1 class="tk-source-sans-pro">Nulla tellus mi, vulputate adipiscing</h1>
+<h1 class="tk-source-sans-pro">Radio Work</h1>
 <div class="paragraphs tk-source-sans-pro">
 
 <div>   
@@ -272,17 +272,18 @@
 </audio>
 </div>-->
 
-<audio id="myAudio" controls="controls">
+<!--<audio id="myAudio" controls="controls">
   Your browser does not support the <code>audio</code> element.
   <source src="https://ia801501.us.archive.org/9/items/052316CourtneyMimsScoreboardUpdate/052316_Courtney_Mims_Scoreboard_Update.mp3" type="audio/mp3">
-</audio>
-
-<div id="waveform"></div>
-<div class="normal-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla. Donec a neque libero. Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante.</div>
-
-<!--<div id="wave"></div>-->
-   
-
+</audio>-->
+<div class="col-md-6">
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/294793574&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+</div>
+    
+<div class="col-md-6">
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/294794145&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+</div>
+    
 <h1 class="tk-source-sans-pro"></h1>
 <div class="portfolio paragraphs tk-source-sans-pro" id="portfolio">
   <div class="container-fluid">
@@ -386,30 +387,6 @@
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 <script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/wavesurfer.min.js"></script>
-    
-<script>
-//console.log("Wavesurfer disabled");
-//
-//document.getElementById("source1").src = "../assets/052316_Courtney_Mims_Scoreboard_Update.ogg";
-//document.getElementById("myAudio").load();
-    
-//var wavesurfer = Object.create(WaveSurfer);
-//
-//wavesurfer.init({
-//    container: document.querySelector('#wave'),
-//    backend: 'MediaElement'
-//});
-//  
-//wavesurfer.load('https://ia801501.us.archive.org/9/items/052316CourtneyMimsScoreboardUpdate/052316_Courtney_Mims_Scoreboard_Update.mp3');
-
-var wavesurfer = WaveSurfer.create({
-    container: '#waveform'
-});
-wavesurfer.load('https://ia801501.us.archive.org/9/items/052316CourtneyMimsScoreboardUpdate/052316_Courtney_Mims_Scoreboard_Update.mp3');
-
-console.log("POST-LOAD");
-</script>
 
 </body>
 </html>
