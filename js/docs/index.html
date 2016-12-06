@@ -1,0 +1,935 @@
+<!-- 
+	Yottie
+	Version: 2.3.1
+	Release date: Thu Dec 01 2016
+	
+	elfsight.com
+	
+	Copyright (c) 2016 Elfsight, LLC. ALL RIGHTS RESERVED
+ -->
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yottie Documentation</title>
+
+    <link rel="stylesheet" href="src/docs.min.css">
+
+    <script src="../vendors/jquery.min.js"></script>
+    <script src="../yottie/jquery.yottie.bundled.js"></script>
+
+    <script src="src/docs.min.js"></script>
+</head>
+
+<body>
+<header class="header container">
+    <div class="row">
+        <div class="medium-12 columns">
+            <h1>Get started with Yottie 2.3.1</h1>
+
+            <div class="header-social">
+                <a class="icon-facebook icon" href="http://facebook.com/elfsight" target="_blank"></a>
+                <a class="icon-twitter icon" href="http://twitter.com/elfsight" target="_blank"></a>
+                <a class="icon-google-plus icon" href="https://plus.google.com/+Elfsight/" target="_blank"></a>
+                <a class="icon-instagram icon" href="http://instagram.com/elfsight" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="install container">
+    <div class="row">
+        <div class="medium-12 columns">
+            <h2>Basic Usage</h2>
+        </div>
+    </div>
+
+    <div class="install-step row">
+        <div class="medium-12 columns">
+            <p>1. Upload <code>yottie</code> folder to your server. Add required files to your website.</p>
+
+            <p><b>There are two ways to do it:</b></p>
+
+            <p>The first one is adding single bundled file which automatically load all dependencies:</p>
+            <pre><code class="html">&lt;!-- don't forget to set correct path --&gt;
+&lt;script src="yottie/jquery.yottie.bundled.js"&gt;&lt;/script&gt;</code></pre>
+
+            <p>Another way is adding the whole files manually:</p>
+            <pre><code class="html">&lt;link href="//cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css" rel="stylesheet"&gt;
+&lt;script src="//apis.google.com/js/platform.js"&gt;&lt;/script&gt;
+&lt;script src="//www.youtube.com/iframe_api"&gt;&lt;/script&gt;
+&lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.runtime.min.js"&gt;&lt;/script&gt;
+&lt;script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- don't forget to set correct path --&gt;
+&lt;link href="yottie/jquery.yottie.min.css" rel="stylesheet"&gt;
+&lt;script src="yottie/jquery.yottie.min.js"&gt;&lt;/script&gt;</code></pre>
+        </div>
+    </div>
+
+    <div class="install-step row">
+        <div class="medium-12 columns">
+            <p>2. Initialize the widget using data-yt-* attributes or as jQuery plugin.</p>
+
+            <p><b>Initialization using data-yt-* attributes</b></p>
+
+            <p>Add the widget's HTML code to the body section.</p>
+
+            <pre><code class="html">&lt;div data-yt
+     data-yt-channel="https://www.youtube.com/user/RockstarGames"
+     data-yt-width="auto"
+     data-yt-lang="en"
+     data-yt-header-layout="accent"
+     data-yt-content-columns="4"
+     data-yt-content-rows="2"
+     data-yt-video-layout="cinema"&gt;
+&lt;/div&gt;</code></pre>
+
+            <p><b>Initialization as jQuery plugin</b></p>
+
+            <pre><code class="html">&lt;div class="my-yottie"&gt;&lt;/div&gt;</code></pre>
+
+            <pre><code class="html">&lt;script&gt;
+    $('.my-yottie').yottie({
+        channel: 'https://www.youtube.com/user/RockstarGames',
+        width: 'auto',
+        lang: 'en',
+        header: {
+            layout: 'accent'
+        },
+        content: {
+            columns: 4,
+            rows: 2
+        },
+        video: {
+            layout: 'cinema'
+        }
+    });
+&lt;/script&gt;</code></pre>
+
+            <p><b>Note:</b> If you use the bundled version you have to initialize as jquery plugin the following way:</i></p>
+
+            <pre><code class="html">&lt;script&gt;
+    window.onYottieReady = function() {
+        $('.my-yottie').yottie({
+            channel: 'https://www.youtube.com/user/RockstarGames',
+            width: 'auto',
+            lang: 'en',
+            header: {
+                layout: 'accent'
+            },
+            content: {
+                columns: 4,
+                rows: 2
+            },
+            video: {
+                layout: 'cinema'
+            }
+        });
+    };
+&lt;/script&gt;</code></pre>
+            <br>
+        </div>
+    </div>
+</section>
+
+<section class="options container">
+    <div class="row">
+        <div class="medium-12 columns">
+            <h2>Options</h2>
+
+            <table class="options-table">
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>HTML data attribute</th>
+                        <th>Default Value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="options-category-title" colspan="4">Source</td>
+                    </tr>
+
+                    <tr>
+                        <td>channel</td>
+                        <td>data-yt-channel</td>
+                        <td>null</td>
+                        <td>Insert URL of a YouTube channel to display its information (Logo, banner, channel name, channel description, videos counter, subscribers counter and views counter) and videos from Uploads playlist in the plugin.</td>
+                    </tr>
+
+                    <tr>
+                        <td>sourceGroups</td>
+                        <td>data-yt-source-groups</td>
+                        <td>null</td>
+                        <td>Create custom groups of videos from any YouTube source (channels, playlists, videos). Name each group and specify unlimited number of YouTube sources in it. <b>Please note:</b> these sources will be displayed instead of videos from the specified channel above and will be presented in tabs. Use this option if you want to organize videos in your channel or create custom playlists of any videos. The sourceGroups option accepts array of plain objects or url-encoded string of JSON in the same format. Each object accepts the following properties:
+                            <ul>
+                                <li><strong>name</strong> - string value, name of the group. If the name is empty, it will be set "Untitled".</li>
+                                <li><strong>sources</strong> - array of urls of different YouTube sources (channel, playlist, specific video).</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>order</td>
+                        <td>data-yt-order</td>
+                        <td>null</td>
+                        <td>It defines a sort order of videos in the gallery. By default, videos are presented in the order they appeared on YouTube or set in the source list. There are 6 available fields to sort videos: date, views, likes, dislikes, position, comments. If you would like to set the order, specify the sort field and set desc (descending) or asc (ascending) order separated by '#'. For example: views#desc. Also a random order is available. Set 'random' to randomize the video order.</td>
+                    </tr>
+
+                    <tr>
+                        <td>cacheTime</td>
+                        <td>data-yt-cache-time</td>
+                        <td>3600</td>
+                        <td>It defines how long in seconds a data from YouTube will be cached in a client side database IndexedDB. Set "0" to turn the cache off.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="options-category-title" colspan="4">Sizes</td>
+                    </tr>
+
+                    <tr>
+                        <td>width</td>
+                        <td>data-yt-width</td>
+                        <td>auto</td>
+                        <td>Plugin width (any CSS valid value: px, %, em, etc.). Set "auto" to make the plugin responsive.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="options-category-title" colspan="4">Language</td>
+                    </tr>
+
+                    <tr>
+                        <td>lang</td>
+                        <td>data-yt-lang</td>
+                        <td>en</td>
+                        <td>Plugin’s UI language. 16 languages support: de, en, es, fr, hr, it, nl, no, pl, pt-BR, sv, tr, ru, hi, zh-HK, ja.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="options-category-title" colspan="4">Header</td>
+                    </tr>
+
+                    <tr>
+                        <td>header.visible</td>
+                        <td>data-yt-header-visible</td>
+                        <td>true</td>
+                        <td>Turn on/off the header in the plugin.</td>
+                    </tr>
+
+                    <tr>
+                        <td>header.layout</td>
+                        <td>data-yt-header-layout</td>
+                        <td>classic</td>
+                        <td>Choose one of three header layouts: classic (like in YouTube), accent (pay more attention to your channel), minimal (attract more attention to your playlist).</td>
+                    </tr>
+
+                    <tr>
+                        <td>header.info</td>
+                        <td>data-yt-header-info</td>
+                        <td>logo, banner, channelName, channelDescription, videosCounter, subscribersCounter, viewsCounter, subscribeButton</td>
+                        <td>List info types of your channel which should be displayed in the header: logo, banner, channelName, channelDescription, videosCounter, subscribersCounter, viewsCounter, subscribeButton.</td>
+                    </tr>
+
+                    <tr>
+                        <td>header.channelName</td>
+                        <td>data-yt-header-channel-name</td>
+                        <td>null</td>
+                        <td>Specify custom channel name instead of your channel name in YouTube.</td>
+                    </tr>
+
+                    <tr>
+                        <td>header.channelDescription</td>
+                        <td>data-yt-header-channel-description</td>
+                        <td>null</td>
+                        <td>Specify custom channel description instead of your channel description in YouTube.</td>
+                    </tr>
+
+                    <tr>
+                        <td>header.channelLogo</td>
+                        <td>data-yt-header-channel-logo</td>
+                        <td>null</td>
+                        <td>Specify custom channel logo url instead of your channel logo in YouTube. The required image size is 100x100.</td>
+                    </tr>
+
+                    <tr>
+                        <td>header.channelBanner</td>
+                        <td>data-yt-header-channel-banner</td>
+                        <td>null</td>
+                        <td>Specify custom channel banner url instead of your channel banner in YouTube. The required image size is 2120x352.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="options-category-title" colspan="4">Groups</td>
+                    </tr>
+
+                    <tr>
+                        <td>groups.visible</td>
+                        <td>data-yt-groups-visible</td>
+                        <td>true</td>
+                        <td>Turn on/off tabs of source groups in the plugin.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="options-category-title" colspan="4">Content</td>
+                    </tr>
+
+                    <tr>
+                        <td>content.columns</td>
+                        <td>data-yt-content-columns</td>
+                        <td>3</td>
+                        <td>Number of columns in the grid.</td>
+                    </tr>
+
+                    <tr>
+                        <td>content.rows</td>
+                        <td>data-yt-content-rows</td>
+                        <td>1</td>
+                        <td>Number of rows in the grid.</td>
+                    </tr>
+
+                    <tr>
+                        <td>content.gutter</td>
+                        <td>data-yt-content-gutter</td>
+                        <td>20</td>
+                        <td>Interval between videos in the grid in pixels.</td>
+                    </tr>
+
+                    <tr>
+                        <td>content.arrowsControl</td>
+                        <td>data-yt-content-arrows-control</td>
+                        <td>true</td>
+                        <td>Activate arrows in the video gallery.</td>
+                    </tr>
+
+                    <tr>
+                        <td>content.scrollControl</td>
+                        <td>data-yt-content-scroll-control</td>
+                        <td>false</td>
+                        <td>Activate scroll in the video gallery.</td>
+                    </tr>
+
+                    <tr>
+                        <td>content.dragControl</td>
+                        <td>data-yt-content-drag-control</td>
+                        <td>true</td>
+                        <td>Activate drag in the video gallery.</td>
+                    </tr>
+
+                    <tr>
+                        <td>content.direction</td>
+                        <td>data-yt-content-direction</td>
+                        <td>horizontal</td>
+                        <td>Moving direction of video gallery’s slides (horizontal or vertical).</td>
+                    </tr>
+
+                    <tr>
+                        <td>content.freeMode</td>
+                        <td>data-yt-content-free-mode</td>
+                        <td>false</td>
+                        <td>Switch the video gallery in free scroll mode.</td>
+                    </tr>
+
+                    <tr>
+                        <td>content.scrollbar</td>
+                        <td>data-yt-content-scrollbar</td>
+                        <td>true</td>
+                        <td>Show scrollbar in the video gallery.</td>
+                    </tr>
+
+                    <tr>
+                        <td>content.transitionEffect</td>
+                        <td>data-yt-content-transition-effect</td>
+                        <td>slide</td>
+                        <td>Slide, fade, coverflow, cube and flip animation of slide switching.</td>
+                    </tr>
+
+                    <tr>
+                        <td>content.transitionSpeed</td>
+                        <td>data-yt-content-transition-speed</td>
+                        <td>600</td>
+                        <td>Animation speed of slide switching (in ms).</td>
+                    </tr>
+
+                    <tr>
+                        <td>content.auto</td>
+                        <td>data-yt-content-auto</td>
+                        <td>0</td>
+                        <td>Autorotation of slide (in ms). Set "0" to turn it off.</td>
+                    </tr>
+
+                    <tr>
+                        <td>content.autoPauseOnHover</td>
+                        <td>data-yt-content-auto-pause-on-hover</td>
+                        <td>true</td>
+                        <td>Disable auto slide switching by hovering on the video slider.</td>
+                    </tr>
+
+                    <tr>
+                        <td>content.responsive</td>
+                        <td>data-yt-content-responsive</td>
+                        <td>null</td>
+                        <td>Accepts Plain Object or JSON string. It overwrites the grid view settings of the video gallery depending on different window sizes. Use the following format: { "600": { "columns": 2, "rows": 2, "gutter": 10 }}. It means when a window width would be less than or equal to 600px then the number of columns would be set to 2, the number of rows - to 2 and gutter - to 10px. <b>Note:</b> if you specify this option as data-yt-content-responsive attribute, please use single quote ' (data-yt-content-responsive='{ "600": { "columns": 2, "rows": 2, "gutter": 10 }}')</td>
+                    </tr>
+
+                    <tr>
+                        <td class="options-category-title" colspan="4">Video</td>
+                    </tr>
+
+                    <tr>
+                        <td>video.layout</td>
+                        <td>data-yt-video-layout</td>
+                        <td>classic</td>
+                        <td>Choose one of three video layouts: classic (video card with full information), cinema (pay more attention to video preview. Info displays on hover), horizontal (appropriate layout for displaying videos in 1-2 columns as a list).</td>
+                    </tr>
+
+                    <tr>
+                        <td>video.info</td>
+                        <td>data-yt-video-info</td>
+                        <td>playIcon, duration, title, date, description, viewsCounter, likesCounter, commentsCounter</td>
+                        <td>List info types of each video which should be displayed in the video gallery: playIcon, duration, title, date, description, viewsCounter, likesCounter, commentsCounter.</td>
+                    </tr>
+
+                    <tr>
+                        <td>video.playMode</td>
+                        <td>data-yt-video-play-mode</td>
+                        <td>popup</td>
+                        <td>Choose the mode of watching videos: in popup ("popup"), directly in the video gallery ("inline"), or in a new browser tab right in YouTube ("youtube").</td>
+                    </tr>
+
+                    <tr>
+                        <td class="options-category-title" colspan="4">Popup</td>
+                    </tr>
+
+                    <tr>
+                        <td>popup.info</td>
+                        <td>data-yt-popup-info</td>
+                        <td>title, channelLogo, channelName, subscribeButton, viewsCounter, likesCounter, dislikesCounter, likesRatio, date, description, descriptionMoreButton, comments</td>
+                        <td>List info types of video which should be displayed in the popup: title, channelLogo, channelName, subscribeButton, viewsCounter, likesCounter, dislikesCounter, likesRatio, date, description, descriptionMoreButton, comments.</td>
+                    </tr>
+
+                    <tr>
+                        <td>popup.autoplay</td>
+                        <td>data-yt-popup-autoplay</td>
+                        <td>true</td>
+                        <td>Turn on/off autoplay while openning a video in the popup.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="options-category-title" colspan="4">Colors</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.scheme</td>
+                        <td>data-yt-color-scheme</td>
+                        <td>default</td>
+                        <td>Choose default or dark color scheme of plugin's UI.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.header.bg</td>
+                        <td>data-yt-color-header-bg</td>
+                        <td>null</td>
+                        <td>Header background color. It supports any css valid color (hex code, rgb, rgba etc). It redefines the related color in a color scheme.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.header.bannerOverlay</td>
+                        <td>data-yt-color-header-banner-overlay</td>
+                        <td>null</td>
+                        <td>Header banner overlay color. It lays on the header banner for contrast with text. Available in "accent" and "minimal" header layouts.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.header.channelName</td>
+                        <td>data-yt-color-header-channel-name</td>
+                        <td>null</td>
+                        <td>Header channel name color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.header.channelNameHover</td>
+                        <td>data-yt-color-header-channel-name-hover</td>
+                        <td>null</td>
+                        <td>Header channel name color on hover.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.header.channelDescription</td>
+                        <td>data-yt-color-header-channel-description</td>
+                        <td>null</td>
+                        <td>Header channel description color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.header.anchor</td>
+                        <td>data-yt-color-header-anchor</td>
+                        <td>null</td>
+                        <td>Header channel description anchors color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.header.anchorHover</td>
+                        <td>data-yt-color-header-anchor-hover</td>
+                        <td>null</td>
+                        <td>Header channel description anchors on hover color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.header.counters</td>
+                        <td>data-yt-color-header-counters</td>
+                        <td>null</td>
+                        <td>Header counters color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.groups.bg</td>
+                        <td>data-yt-color-groups-bg</td>
+                        <td>null</td>
+                        <td>Groups background color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.groups.link</td>
+                        <td>data-yt-color-groups-link</td>
+                        <td>null</td>
+                        <td>Groups link color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.groups.linkHover</td>
+                        <td>data-yt-color-groups-link-hover</td>
+                        <td>null</td>
+                        <td>Groups link color on hover.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.groups.linkActive</td>
+                        <td>data-yt-color-groups-link-active</td>
+                        <td>null</td>
+                        <td>Groups active link color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.groups.highlight</td>
+                        <td>data-yt-color-groups-highlight</td>
+                        <td>null</td>
+                        <td>Groups highlight color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.groups.highlightHover</td>
+                        <td>data-yt-color-groups-highlight-hover</td>
+                        <td>null</td>
+                        <td>Groups highlight color on hover.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.groups.highlightActive</td>
+                        <td>data-yt-color-groups-highlight-active</td>
+                        <td>null</td>
+                        <td>Groups active highlight color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.content.bg</td>
+                        <td>data-yt-color-content-bg</td>
+                        <td>null</td>
+                        <td>Content background color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.content.arrows</td>
+                        <td>data-yt-color-content-arrows</td>
+                        <td>null</td>
+                        <td>Content arrows color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.content.arrowsHover</td>
+                        <td>data-yt-color-content-arrows-hover</td>
+                        <td>null</td>
+                        <td>Content arrows color on hover.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.content.arrowsBg</td>
+                        <td>data-yt-color-content-arrows-bg</td>
+                        <td>null</td>
+                        <td>Content arrows background color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.content.arrowsBgHover</td>
+                        <td>data-yt-color-content-arrows-bg-hover</td>
+                        <td>null</td>
+                        <td>Content arrows background color on hover.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.content.acrollbarBg</td>
+                        <td>data-yt-color-content-scrollbar-bg</td>
+                        <td>null</td>
+                        <td>Content scrollbar background color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.content.scrollbarSliderBg</td>
+                        <td>data-yt-color-content-scrollbar-slider-bg</td>
+                        <td>null</td>
+                        <td>Content scrollbar slider background color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.video.bg</td>
+                        <td>data-yt-color-video-bg</td>
+                        <td>null</td>
+                        <td>Video background color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.video.overlay</td>
+                        <td>data-yt-color-video-overlay</td>
+                        <td>null</td>
+                        <td>Video overlay color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.video.playIcon</td>
+                        <td>data-yt-color-video-play-icon</td>
+                        <td>null</td>
+                        <td>Video play icon color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.video.playIconHover</td>
+                        <td>data-yt-color-video-play-icon-hover</td>
+                        <td>null</td>
+                        <td>Video play icon color on hover.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.video.duration</td>
+                        <td>data-yt-color-video-duration</td>
+                        <td>null</td>
+                        <td>Video duration color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.video.durationBg</td>
+                        <td>data-yt-color-video-duration-bg</td>
+                        <td>null</td>
+                        <td>Video duration background color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.video.title</td>
+                        <td>data-yt-color-video-title</td>
+                        <td>null</td>
+                        <td>Video title color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.video.titleHover</td>
+                        <td>data-yt-color-video-title-hover</td>
+                        <td>null</td>
+                        <td>Video title color on hover.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.video.date</td>
+                        <td>data-yt-color-video-date</td>
+                        <td>null</td>
+                        <td>Video date color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.video.description</td>
+                        <td>data-yt-color-video-description</td>
+                        <td>null</td>
+                        <td>Video description color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.video.anchor</td>
+                        <td>data-yt-color-video-anchor</td>
+                        <td>null</td>
+                        <td>Video description anchor color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.video.anchorHover</td>
+                        <td>data-yt-color-video-anchor-hover</td>
+                        <td>null</td>
+                        <td>Video description anchor color on hover.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.video.counters</td>
+                        <td>data-yt-color-video-counters</td>
+                        <td>null</td>
+                        <td>Video counters color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.bg</td>
+                        <td>data-yt-color-popup-bg</td>
+                        <td>null</td>
+                        <td>Popup background color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.overlay</td>
+                        <td>data-yt-color-popup-overlay</td>
+                        <td>null</td>
+                        <td>Popup overlay color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.title</td>
+                        <td>data-yt-color-popup-title</td>
+                        <td>null</td>
+                        <td>Popup title color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.channelName</td>
+                        <td>data-yt-color-popup-channel-name</td>
+                        <td>null</td>
+                        <td>Popup channel name color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.channelNameHover</td>
+                        <td>data-yt-color-popup-channel-name-hover</td>
+                        <td>null</td>
+                        <td>Popup channel name color on hover.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.viewsCounter</td>
+                        <td>data-yt-color-popup-views-counter</td>
+                        <td>null</td>
+                        <td>Popup views counter color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.likesRatio</td>
+                        <td>data-yt-color-popup-likes-ratio</td>
+                        <td>null</td>
+                        <td>Popup likes ratio color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.dislikesRatio</td>
+                        <td>data-yt-color-popup-dislikes-ratio</td>
+                        <td>null</td>
+                        <td>Popup dislikes ratio color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.likesCounter</td>
+                        <td>data-yt-color-popup-likes-counter</td>
+                        <td>null</td>
+                        <td>Popup likes counter color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.dislikesCounter</td>
+                        <td>data-yt-color-popup-dislikes-counter</td>
+                        <td>null</td>
+                        <td>Popup dislikes counter color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.date</td>
+                        <td>data-yt-color-popup-date</td>
+                        <td>null</td>
+                        <td>Popup date color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.description</td>
+                        <td>data-yt-color-popup-description</td>
+                        <td>null</td>
+                        <td>Popup description color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.anchor</td>
+                        <td>data-yt-color-popup-anchor</td>
+                        <td>null</td>
+                        <td>Popup anchor color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.anchorHover</td>
+                        <td>data-yt-color-popup-anchor-hover</td>
+                        <td>null</td>
+                        <td>Popup anchor color on hover.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.descriptionMoreButton</td>
+                        <td>data-yt-color-popup-description-more-button</td>
+                        <td>null</td>
+                        <td>Popup description more button color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.descriptionMoreButtonHover</td>
+                        <td>data-yt-color-popup-description-more-button-hover</td>
+                        <td>null</td>
+                        <td>Popup description more button color on hover.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.commentsUsername</td>
+                        <td>data-yt-color-popup-comments-username</td>
+                        <td>null</td>
+                        <td>Popup comments username color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.commentsUsernameHover</td>
+                        <td>data-yt-color-popup-comments-username-hover</td>
+                        <td>null</td>
+                        <td>Popup comments username color on hover.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.commentsPassedTime</td>
+                        <td>data-yt-color-popup-comments-passed-time</td>
+                        <td>null</td>
+                        <td>Popup comments passed time color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.commentsLikes</td>
+                        <td>data-yt-color-popup-comments-likes</td>
+                        <td>null</td>
+                        <td>Popup comments likes color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.commentsText</td>
+                        <td>data-yt-color-popup-comments-text</td>
+                        <td>null</td>
+                        <td>Popup comments text color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.controls</td>
+                        <td>data-yt-color-popup-controls</td>
+                        <td>null</td>
+                        <td>Popup controls color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.controlsHover</td>
+                        <td>data-yt-color-popup-controls-hover</td>
+                        <td>null</td>
+                        <td>Popup controls color on hover.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.controlsMobile</td>
+                        <td>data-yt-color-popup-controls-mobile</td>
+                        <td>null</td>
+                        <td>Popup mobile controls color.</td>
+                    </tr>
+
+                    <tr>
+                        <td>color.popup.controlsMobileBg</td>
+                        <td>data-yt-color-popup-controls-mobile-bg</td>
+                        <td>null</td>
+                        <td>Popup mobile controls background color.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="options-category-title" colspan="4">AdSense</td>
+                    </tr>
+
+                    <tr>
+                        <td>ads.client</td>
+                        <td>data-yt-ads-client</td>
+                        <td>null</td>
+                        <td>Yottie supports AdSense Advertisement platform. Specify AdSense client (pubId) to turn it on.</td>
+                    </tr>
+
+                    <tr>
+                        <td>ads.slots.content</td>
+                        <td>data-yt-ads-slots-content</td>
+                        <td>null</td>
+                        <td>Slot identifier for adv block in content (video gallery).</td>
+                    </tr>
+
+                    <tr>
+                        <td>ads.slots.popup</td>
+                        <td>data-yt-ads-slots-popup</td>
+                        <td>null</td>
+                        <td>Slot identifier for adv block in popup.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="options-category-title" colspan="4">Other</td>
+                    </tr>
+
+                    <tr>
+                        <td>debug</td>
+                        <td>data-is-debug</td>
+                        <td>false</td>
+                        <td>Set "true" to display error messages.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="example container">
+    <div class="row">
+        <div class="medium-12 columns">
+            <h2>Example</h2>
+
+            <div data-yt data-yt-channel="https://www.youtube.com/user/RockstarGames"></div>
+
+            <br><br>
+            <p>Congratulations! You have successfully installed your Yottie.</p>
+        </div>
+    </div>
+</section>
+
+<section class="support container">
+    <div class="row">
+        <div class="medium-12 columns">
+            <h2>Support, questions and offers</h2>
+
+            <p>Incoming issues and queries are taken care of in 24-36 hours in order of receiving.</p>
+
+            <a href="https://elfsight.ticksy.com/submit/#product100003622" target="_blank">
+                <span>Visit Support Center</span>
+            </a>
+            <br><br>
+        </div>
+    </div>
+</section>
+
+<footer class="footer container">
+    <div class="row">
+        <div class="medium-12 columns">
+            <h2>Keep in Touch</h2>
+            <a class="icon-facebook icon" href="http://facebook.com/elfsight" target="_blank"></a>
+            <a class="icon-twitter icon" href="http://twitter.com/elfsight" target="_blank"></a>
+            <a class="icon-google-plus icon" href="https://plus.google.com/+Elfsight/" target="_blank"></a>
+            <a class="icon-instagram icon" href="http://instagram.com/elfsight" target="_blank"></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

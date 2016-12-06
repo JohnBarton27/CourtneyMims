@@ -1,0 +1,135 @@
+<!-- 
+	Yottie
+	Version: 2.3.1
+	Release date: Thu Dec 01 2016
+	
+	elfsight.com
+	
+	Copyright (c) 2016 Elfsight, LLC. ALL RIGHTS RESERVED
+ -->
+
+<!-- Elfsight © elfsight.com -->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yottie Example - Default</title>
+
+        <script src="../../vendors/jquery.min.js"></script>
+        <script src="../../yottie/jquery.yottie.bundled.js"></script>
+
+        <style>
+            body {
+                margin: 0;
+                color: #222;
+                font: normal 16px/1.3 Roboto, Arial, Sans-Serif;
+            }
+            .wrapper {
+                max-width: 960px;
+                margin: 40px auto;
+            }
+            h1 {
+                margin-bottom: 40px;
+            }
+            h2 {
+                margin: 40px 0 10px
+            }
+            h2 + p {
+                margin-top: 10px;
+            }
+        </style>
+
+        <script>
+            window.onYottieReady = function() {
+                $('.my-yottie-1').yottie({
+                    channel: 'https://www.youtube.com/user/starwars',
+                    sourceGroups: [
+                        {
+                            name: 'My Uploads',
+                            sources: [
+                                'https://www.youtube.com/user/starwars'
+                            ]
+                        }
+                    ],
+                    color: {
+                        scheme: 'deep blue'
+                    }
+                });
+
+                $('.my-yottie-2').yottie({
+                    channel: 'https://www.youtube.com/user/starwars',
+                    sourceGroups: [
+                        {
+                            name: 'Behind the Scenes',
+                            sources: [
+                                'https://www.youtube.com/playlist?list=PL148kCvXk8pBmvQbefoOWL3B8nVXcyx5P'
+                            ]
+                        },
+                        {
+                            name: 'Star Wars: Force for Change & The Force Awakens',
+                            sources: [
+                                'https://www.youtube.com/playlist?list=PL148kCvXk8pALpyZVxIj3KX1OIH-Sk7Jc',
+                                'https://www.youtube.com/playlist?list=PL148kCvXk8pD4i6tww4roNV1R_oAceb-5'
+                            ]
+                        },
+                        {
+                            name: 'Favorites Videos',
+                            sources: [
+                                'https://www.youtube.com/watch?v=X-mewHsIhAU',
+                                'https://www.youtube.com/watch?v=P7xZV_26VYU',
+                                'https://www.youtube.com/watch?v=GIP71_5oTuU'
+                            ]
+                        }
+                    ],
+                    color: {
+                        scheme: 'deep blue'
+                    }
+                });
+
+                $('.my-yottie-3').yottie({
+                    sourceGroups: [
+                        {
+                            name: 'Video, playlist and channel together',
+                            sources: [
+                                'https://www.youtube.com/watch?v=Mc12WL6MOj0',
+                                'https://www.youtube.com/playlist?list=PLK5HARgNfgj8oofoBClZM8KPzOEnvgwmf',
+                                'https://www.youtube.com/user/FoxMovies'
+                            ]
+                        },
+                        {
+                            name: 'Channel and playlists',
+                            sources: [
+                                'https://www.youtube.com/user/MARVEL',
+                                'https://www.youtube.com/playlist?list=PLfPBohF1uFwo4hH2f_G7D2hNHkX8B_Lc7',
+                                'https://www.youtube.com/playlist?list=PLfPBohF1uFwqHfxmlICxVGAJ6sCeYYrhH'
+                            ]
+                        }
+                    ],
+                    color: {
+                        scheme: 'deep blue'
+                    }
+                });
+            };
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Yottie Source Groups Example</h1>
+
+            <h2>Example 1</h2>
+            <p>Single source group with channel url specified. It's useful when you need to set a custom group name instead of "Uploads"</p>
+            <div class="my-yottie-1"></div>
+
+            <h2>Example 2</h2>
+            <p>Multiple source groups with different combinations of channel sources (playlist and specific video urls)</p>
+            <div class="my-yottie-2"></div>
+
+            <h2>Example 3</h2>
+            <p>Multiple source groups from different sources from entire YouTube (channels, playlists, videos). In this example channel is not specified.</p>
+            <div class="my-yottie-3"></div>
+
+            <p>So you can use unlimited combinations of sources to create your video playlists</p>
+        </div>
+    </body>
+</html>
