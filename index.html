@@ -116,7 +116,7 @@
    <!-- about-->
     <div class="about_us hidden">
       <div id="about_title" class="page_name tk-museo-sans"></div>
-      <h1 class="tk-source-sans-pro">Meet Courtney Mims.</h1>
+      <h1 id="about_header" class="tk-source-sans-pro"></h1>
       <div class="social-buttons">
      <a class="facebook" href="#" target="_blank"></a>
      <a class="twitter" href="#" target="_blank"></a>
@@ -127,32 +127,48 @@
      <a class="youtube" href="#" target="_blank"></a>
      </div>
       <div class="paragraphs tk-source-sans-pro">
-       <div class="normal-text">Courtney Mims is a second year telecommunications student at the University of Florida. She has worked previously with Sports Radio 1560 "The Fan" with Cumulus Media in Melbourne as an intern for the Mark Moses Show. She is currently working as a multi-media journalist for WUFT's 89.1 and a Gators Football/basketball beat reporter for College Primetime.</div>
+       <div id="about_text" class="normal-text"></div>
        <div class="info-block">
        <ul>
-       <li class="name"><strong>Courtney Mims</strong></li>
-       <li class="email">courtneymims@hotmail.com</li>
-       <li class="address">Gainesville, FL</li>
+       <li class="name"><strong id="about_name"></strong></li>
+       <li id="about_email" class="email"></li>
+       <li id="about_location" class="address">Gainesville, FL</li>
         <li><div class="social-buttons">
-        <a class="twitter" href="https://twitter.com/MimsCourtney" target="_blank"></a>
+        <a id="about_twitter" class="twitter" target="_blank"></a>
         <!--<a class="google-plus" href="#" target="_blank"></a>
         <a class="rss" href="#" target="_blank"></a>
         <a class="pintrest" href="#" target="_blank"></a>-->
-        <a class="linkedin" href="http://www.linkedin.com/in/mimsthejournalistfloridaneeds" target="_blank"></a>
+        <a id="about_linkedin" class="linkedin" target="_blank"></a>
 
 
      </div></li>
        </ul>
        </div>
-        <div class="photo-img"><img src="images/JRB/Edited/CourtneySportsStanding.jpg" alt="Sarah Smith" /></div>
+        <div class="photo-img"><img id="about_photo" alt="Sarah Smith" /></div>
       </div>
     </div>
     
-    <script>
-	    $.get('about.txt', function(data) {
-    	   console.log(data)
+    <script type="application/javascript">
+    	aboutData = {}
+	    $.get('http://www.courtneymims.com/about.txt', function(data) {
+	    	lines = data.split("\n")
+	    	
+	    	$(lines).each(function() {
+	    		pieces = this.split(/:(.+)/)
+	    		aboutData[pieces[0]] = pieces[1]
+	    	})
+			
+	    	$("#about_title").html(aboutData["title"])
+	    	$("#about_header").html(aboutData["header"])
+	    	$("#about_text").html(aboutData["text"])
+	    	$("#about_name").html(aboutData["name"])
+	    	$("#about_email").html(aboutData["email"])
+	    	$("#about_location").html(aboutData["location"])
+	    	$("#about_twitter").attr("href", aboutData["twitter"])
+	    	$("#about_linkedin").attr("href", aboutData["linkedin"])	    	
+	    	$("#about_photo").attr("src", aboutData["photo"])
+	    	
     	}, 'text');
-    	$("#about_title").html("About Courtney")
     </script>
   
   <!-- What we do-->  
@@ -199,36 +215,18 @@
       <iframe width="560" height="295" src="https://www.youtube.com/embed/UVfWv5xxcvs" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
       <iframe width="560" height="295" src="https://www.youtube.com/embed/0ZAiRt1Awl4" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
 
-      
-<!--      <link href="//cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css" rel="stylesheet">
-<script src="//apis.google.com/js/platform.js"></script>
-<script src="//www.youtube.com/iframe_api"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.runtime.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-<script type="text/javascript" src="js/vendors/handlebars.runtime.min.js"></script> 
-<script type="text/javascript" src="js/vendors/jquery.min.js"></script> 
-<script type="text/javascript" src="js/vendors/swiper.jquery.min.js"></script>
-
-<link href="js/yottie/jquery.yottie.min.css" rel="stylesheet">
-<script src="js/yottie/jquery.yottie.min.js"></script>    
-          <script src="https://apis.google.com/js/platform.js"></script>
-<div data-yt
-     data-yt-channel="https://www.youtube.com/user/EverydayGator"
-     data-yt-source-groups="%5B%7B%22name%22%3A%22Everyday%20Gator%22%2C%22sources%22%3A%5B%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DMCKjhmMbhAI%22%2C%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DVtCDoCbq1ww%22%2C%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DqwEqYg6uB0A%22%2C%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5FO2ZXWhHGc%22%2C%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D90HMceFqObo%22%2C%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dhb6wj9ZQw9Y%22%5D%7D%2C%7B%22name%22%3A%22SG%20Success%20Series%22%2C%22sources%22%3A%5B%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnyjRFWyutjc%22%2C%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnfrODN3_YY4%22%2C%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D0H2hr1fPuVE%22%2C%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3sOAWHa_zco%22%2C%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUVfWv5xxcvs%22%2C%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D0ZAiRt1Awl4%22%5D%7D%5D"
-     data-yt-header-layout="classic" 
-     data-yt-header-channel-description="Highlights of Courtney Mims' work on-camera" 
-     data-yt-header-channel-name="Courtney Mims"
-     data-yt-header-channel-logo="http://www.courtneymims.com/images/JRB/CourtneyYouTubeLogo.png"
-     data-yt-header-channel-banner="http://www.courtneymims.com/images/JRB/CourtneyYouTubeHeader.png" 
-     data-yt-header-info="logo, banner, channelName, channelDescription"
-     data-yt-content-columns="4" 
-     data-yt-content-scroll-control="true" 
-     data-yt-content-scrollbar="true"
-     data-yt-video-layout="classic"
-     data-yt-video-info="playIcon, duration, title, date, viewsCounter, likesCounter, commentsCounter"
-     data-yt-video-play-mode="youtube"
-     data-yt-popup-info="">
-</div>-->
+      <script>
+     	cameraData = {}
+	    $.get('http://www.courtneymims.com/cameerawork.txt', function(data) {
+	    	lines = data.split("\n")
+	    	
+	    	$(lines).each(function() {
+	    		pieces = this.split(/:(.+)/)
+	    		cameraData[pieces[0]] = pieces[1]
+	    	})
+	    	
+  	}, 'text');
+      </script>
 
   </div>
 </div>

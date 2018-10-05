@@ -1,0 +1,35 @@
+title:On-Camera Work
+section:WUFT
+description:Since Fall 2017, Courtney has hosted WUFT's "Sports in 60" segment multiple times.
+video:https://www.youtube.com/embed/BpPPVVwqNFM
+video:https://www.youtube.com/embed/MqpmZbi4Lys
+video:https://www.youtube.com/embed/xv8tCRQLVGM
+video:https://www.youtube.com/embed/xH3I2EKaPKc
+video:https://www.youtube.com/embed/fa-jUgnb2CY
+video:https://www.youtube.com/embed/iHDj60j3--I
+
+section:ABC News 4
+description:Courtney was a sports intern at WCIV ABC News 4 in Charleston, South Carolina, from June 2017 - August 2017.
+video:https://www.youtube.com/embed/P54IJeqImB0
+video:https://www.youtube.com/embed/hGAh79nll_Q
+video:https://www.youtube.com/embed/rRsKfmdk_rU
+video:https://www.youtube.com/embed/EtcRoxTAJ0Y
+video:https://www.youtube.com/embed/3BDIHmS1OD8
+
+section:Everyday Gator
+description:<i>Everyday Gator</i> is a web series produced on the campus of the University of Florida and in the Gainesville community by Tangible Productions. Courtney has hosted numerous <i>Everyday Gator</i> segments since Fall 2015.
+video:https://www.youtube.com/embed/MCKjhmMbhAI
+video:https://www.youtube.com/embed/VtCDoCbq1ww
+video:https://www.youtube.com/embed/qwEqYg6uB0A
+video:https://www.youtube.com/embed/5FO2ZXWhHGc
+video:https://www.youtube.com/embed/90HMceFqObo
+video:https://www.youtube.com/embed/hb6wj9ZQw9Y
+
+section:SG Success Series
+description:In April 2016, Courtney Mims co-hosted a series of videos promoting the success of Student Government over the 2015-16 academic year. She interviewed top members of Student Government for the video series, including Student Body President Joselin Padron-Rasines, Student Body Treasurer Nicholas Carre, and many others.
+video:https://www.youtube.com/embed/nyjRFWyutjc
+video:https://www.youtube.com/embed/nfrODN3_YY4
+video:https://www.youtube.com/embed/0H2hr1fPuVE
+video:https://www.youtube.com/embed/3sOAWHa_zco
+video:https://www.youtube.com/embed/UVfWv5xxcvs
+video:https://www.youtube.com/embed/0ZAiRt1Awl4
