@@ -1,0 +1,72 @@
+title:Writing
+
+section:WRUF
+
+article_title:NFL Preview: Jaguars vs. Bengals
+article_date:November 3, 2017
+article_link:http://www.wruf.com/headlines/2017/11/03/nfl-preview-jaguars-vs-bengals/
+article_img:http://www.wruf.com/wp-content/uploads/2017/11/USATSI_10363204-660x330.jpg
+
+article_title:High School Football Roundup
+article_date:October 27, 2017
+article_link:http://www.wruf.com/headlines/2017/10/27/high-school-football-roundup/
+article_img:http://www.wruf.com/wp-content/uploads/2016/12/FHSAA-Sunburst-660x330.png
+
+article_title:SEC Game Preview: LSU vs. Ole Miss
+article_date:October 20, 2017
+article_link:http://www.wruf.com/headlines/2017/10/20/sec-game-preview-lsu-vs-ole-miss/
+article_img:http://www.wruf.com/wp-content/uploads/2017/10/USATSI_10346647-660x330.jpg
+
+article_title:Tampa Bay Buccaneers at Arizona Cardinals
+article_date:October 13, 2017
+article_link:http://www.wruf.com/headlines/2017/10/13/tampa-bay-buccaneers-arizona-cardinals/
+article_img:http://www.wruf.com/wp-content/uploads/2017/10/USATSI_10329746-660x330.jpg
+
+article_title:SEC Game Preview: Vanderbilt Commodores Ready for Gators Showdown
+article_date:September 29, 2017
+article_link:http://www.wruf.com/headlines/2017/09/29/sec-game-preview-vanderbilt-commodores-ready-gators-showdown/
+article_img:http://www.wruf.com/wp-content/uploads/2017/09/USATSI_10300227_168381752_lowres-660x330.jpg
+
+article_title:SEC Game Preview: Auburn takes on Missouri
+article_date:September 22, 2017
+article_link:http://www.wruf.com/headlines/2017/09/22/sec-game-preview-auburn-takes-missouri/
+article_img:http://www.wruf.com/wp-content/uploads/2017/09/USATSI_10284089_168381752_lowres-e1506264112518-660x330.jpg
+article_vert_offset:-130px
+
+article_title:College Football Preview: Georgia Takes On Samford
+article_date:September 15, 2017
+article_link:http://www.wruf.com/headlines/2017/09/15/college-football-preview-georgia-takes-samford/
+article_img:http://www.wruf.com/wp-content/uploads/2017/09/USATSI_10271321-660x330.jpg
+
+article_title:Vanderbilt Takes on Middle Tennessee State in Season Opener
+article_date:September 1, 2017
+article_link:http://www.wruf.com/headlines/2017/09/01/vanderbilt-takes-on-middle-tennessee-state-in-season-opener/
+article_img:http://www.wruf.com/wp-content/uploads/2017/09/USATSI_9769656_168381752_lowres-660x330.jpg" style="margin-top:0px;
+
+section:College Primetime
+
+article_title:CFB Preview - Florida at Arkansas
+article_date:November 3, 2016
+article_link:http://www.collegeprimetime.com/single-post/2016/11/03/College-Primetime-CFB-Preview---Florida-at-Arkansas
+article_img:https://static.wixstatic.com/media/33042a_3cf9df180ca0454d80fda4696c41d9f9~mv2.jpg/v1/fill/w_591,h_392,al_c,lg_1,q_80/33042a_3cf9df180ca0454d80fda4696c41d9f9~mv2.jpg
+article_vert_offset:-30px
+
+article_title:CFB Preview - Florida Gators
+article_date:August 22, 2016
+article_link:http://www.collegeprimetime.com/single-post/2016/08/22/College-Primetime-CFB-Preview---Florida-Gators
+article_img:https://static.wixstatic.com/media/33042a_6fbdb0c5dce54c50936379d333b1bda4~mv2.jpg/v1/fill/w_584,h_313,al_c,lg_1,q_80/33042a_6fbdb0c5dce54c50936379d333b1bda4~mv2.jpg
+article_vert_offset:-50px
+
+section:WUFT
+
+article_title:Person Freed From Car Following Gainesville Crash
+article_date:November 1, 2016
+article_link:http://www.wuft.org/news/2016/11/01/gfr-person-trapped-in-gainesville-car-crash/
+article_img:https://pbs.twimg.com/media/CwLrQvNWIAA4vxa.jpg
+article_vert_offset:-150px
+
+article_title:Hermine’s Aftermath Still Hampering Cedar Key
+article_date:September 6, 2016
+article_link:http://www.wuft.org/news/2016/09/06/hermines-aftermath-still-hampering-cedar-key/
+article_img:http://www.wuft.org/news/files/2016/09/1.jpg
+article_vert_offset:-150px

@@ -144,7 +144,7 @@
      </div></li>
        </ul>
        </div>
-        <div class="photo-img"><img id="about_photo" alt="Sarah Smith" /></div>
+        <div class="photo-img"><img id="about_photo" alt="Courtney Mims" /></div>
       </div>
     </div>
     
@@ -240,10 +240,11 @@
 
 <!-- work -->
 <div class="products hidden">
-<div id="radio_title" class="page_name tk-museo-sans"></div>
-<div id="radio_sections"></div>
+	<div id="radio_title" class="page_name tk-museo-sans"></div>
+	<div id="radio_sections" class="paragraphs tk-source-sans-pro"></div>
 
 	<script>
+		
      	radioData = {}
      	radioData["sections"] = []
 	    $.get('https://www.courtneymims.com/radiowork.txt', function(data) {
@@ -295,14 +296,14 @@
 	    		
 	    		$(this["audios"]).each(function() {
 	    			sectionsHtml += "<div class=\"col-md-6\"><iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" src=\"" + this + "\"></iframe></div>"
-	    		})
+ 	    		})
 	    		
 	    	})
-	    	
-	    	console.log(sectionsHtml)
+
 	    	$("#radio_sections").html(sectionsHtml)
 	    	
   		}, 'text');
+		
     </script>
 </div>
 
