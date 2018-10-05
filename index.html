@@ -174,111 +174,165 @@
   <!-- What we do-->  
 <div class="what_we_do hidden">
 
-  <div class="page_name tk-museo-sans">On-Camera Work</div>
+  <div id="camera_title" class="page_name tk-museo-sans"></div>
     
-  <div class="paragraphs tk-source-sans-pro">
-      <h1 class="tk-source-sans-pro">WUFT</h1>
-      <p>Since Fall 2017, Courtney has hosted WUFT's "Sports in 60" segment multiple times.</p>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/BpPPVVwqNFM" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/MqpmZbi4Lys" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/xv8tCRQLVGM" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/xH3I2EKaPKc" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/fa-jUgnb2CY" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/iHDj60j3--I" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      
-      <hr/>
-      <h1 class="tk-source-sans-pro">ABC News 4</h1>
-      <p>Courtney was a sports intern at WCIV ABC News 4 in Charleston, South Carolina, from June 2017 - August 2017.</p>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/P54IJeqImB0" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/hGAh79nll_Q" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/rRsKfmdk_rU" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/EtcRoxTAJ0Y" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/3BDIHmS1OD8" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      
-      <hr/>      
-      <h1 class="tk-source-sans-pro">Everyday Gator</h1>
-      <p><i>Everyday Gator</i> is a web series produced on the campus of the University of Florida and in the Gainesville community by Tangible Productions. Courtney has hosted numerous <i>Everyday Gator</i> segments since Fall 2015.</p>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/MCKjhmMbhAI" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/VtCDoCbq1ww" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/qwEqYg6uB0A" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/5FO2ZXWhHGc" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/90HMceFqObo" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/hb6wj9ZQw9Y" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      
-      <hr/>
-      <h1 class="tk-source-sans-pro">SG Success Series</h1>
-      <p>In April 2016, Courtney Mims co-hosted a series of videos promoting the success of Student Government over the 2015-16 academic year. She interviewed top members of Student Government for the video series, including Student Body President Joselin Padron-Rasines, Student Body Treasurer Nicholas Carre, and many others.</p>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/nyjRFWyutjc" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/nfrODN3_YY4" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/0H2hr1fPuVE" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/3sOAWHa_zco" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/UVfWv5xxcvs" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-      <iframe width="560" height="295" src="https://www.youtube.com/embed/0ZAiRt1Awl4" frameborder="0" style="padding-left:30px;" allowfullscreen></iframe>
-
-      <script>
+  <div id="camera_sections" class="paragraphs tk-source-sans-pro"></div>
+  <script>
      	cameraData = {}
-	    $.get('http://www.courtneymims.com/cameerawork.txt', function(data) {
+     	cameraData["sections"] = []
+	    $.get('http://www.courtneymims.com/camerawork.txt', function(data) {
 	    	lines = data.split("\n")
-	    	
-	    	$(lines).each(function() {
+
+    		// Set up data structure
+	    	vidArray = []
+	    	sectionData = {}
+	    	$(lines).each(function(index) {
 	    		pieces = this.split(/:(.+)/)
-	    		cameraData[pieces[0]] = pieces[1]
+	    		
+	    		if (pieces[0] == "title") {
+	    			// Set title of page
+	    			cameraData[pieces[0]] = pieces[1]
+	    		} else if (pieces[0] == "section") {
+	    			// If there was a previous section, add it
+	    			if (Object.keys(sectionData).length != 0) {
+	    				sectionData["videos"] = vidArray
+	    				cameraData["sections"].push(sectionData)
+	    				sectionData = {}
+	    				vidArray = []
+	    			}
+	    			
+	    			//Start new section
+	    			sectionData[pieces[0]] = pieces[1]
+	    		} else if (pieces[0] == "description") {
+	    			sectionData[pieces[0]] = pieces[1]
+	    		} else if (pieces[0] == "video") {
+	    			vidArray.push(pieces[1])	
+	    		}
+	    		
+	    		if (index == (lines.length - 1)) {
+	    			sectionData["videos"] = vidArray
+    				cameraData["sections"].push(sectionData)
+	    		}
 	    	})
 	    	
-  	}, 'text');
-      </script>
-
-  </div>
+	    	console.log(cameraData)
+	    	$("#camera_title").html(cameraData["title"])
+	    	
+	    	sectionsHtml = ""
+	    	$(cameraData["sections"]).each(function() {
+	    		if (sectionsHtml != "") {
+	    			sectionsHtml += "<hr/>"	    			
+	    		}
+	    		sectionsHtml += "<h1 class=\"tk-source-sans-pro\">" + this["section"] + "</h1>"
+	    		sectionsHtml += "<p>" + this["description"] + "</p>"
+	    		
+	    		$(this["videos"]).each(function() {
+	    			sectionsHtml += "<iframe width=\"560\" height=\"295\" src=\"" + this + "\" frameborder=\"0\" style=\"padding-left:30px;\" allowfullscreen></iframe>"
+	    		})
+	    		
+	    	})
+	    	
+	    	$("#camera_sections").html(sectionsHtml)
+	    	
+  		}, 'text');
+    </script>
 </div>
 
 
 <!-- work -->
 <div class="products hidden">
-<div class="page_name tk-museo-sans">Radio Work</div>
-<h1 class="tk-source-sans-pro">Sports Radio 1560 "The Fan"</h1>
-<div class="paragraphs tk-source-sans-pro">
-<p>During the summer of 2016, Courtney worked with Sports Radio 1560 "The Fan" with Cumulus Media in Melbourne as an intern for the Mark Moses Show. The following are some of her on-air highlights:</p>
-<div>   
-<div class="col-md-6">
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/294793574&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+<div id="radio_title" class="page_name tk-museo-sans"></div>
+<div id="radio_sections">
+	<div class="col-md-6">
+	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/294793574&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+	</div>
+	    
+	<div class="col-md-6">
+	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/294794145&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+	</div>
+	 
+	<div class="col-md-6">
+	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774907&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+	</div>    
+	
+	<div class="col-md-6">
+	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774904&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+	</div>
+	    
+	<div class="col-md-6">
+	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774902&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+	</div>
+	    
+	<div class="col-md-6">
+	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774901&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+	</div> 
+	    
+	<div class="col-md-6">
+	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774896&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+	</div>
 </div>
     
-<div class="col-md-6">
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/294794145&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
 </div>
- 
-<div class="col-md-6">
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774907&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-</div>    
+</div>
 
-<div class="col-md-6">
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774904&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-</div>
-    
-<div class="col-md-6">
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774902&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-</div>
-    
-<div class="col-md-6">
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774901&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-</div> 
-    
-<div class="col-md-6">
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774896&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-</div>
-    
-<h1 class="tk-source-sans-pro"></h1>
-<div class="portfolio paragraphs tk-source-sans-pro" id="portfolio">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 no-padding "> 
-        
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
+	<script>
+     	radioData = {}
+     	radioData["sections"] = []
+	    $.get('http://www.courtneymims.com/radiowork.txt', function(data) {
+	    	lines = data.split("\n")
+
+    		// Set up data structure
+	    	audioArray = []
+	    	sectionData = {}
+	    	$(lines).each(function(index) {
+	    		pieces = this.split(/:(.+)/)
+	    		
+	    		if (pieces[0] == "title") {
+	    			// Set title of page
+	    			radioData[pieces[0]] = pieces[1]
+	    		} else if (pieces[0] == "section") {
+	    			// If there was a previous section, add it
+	    			if (Object.keys(sectionData).length != 0) {
+	    				sectionData["videos"] = audioArray
+	    				radioData["sections"].push(sectionData)
+	    				sectionData = {}
+	    				audioArray = []
+	    			}
+	    			
+	    			//Start new section
+	    			sectionData[pieces[0]] = pieces[1]
+	    		} else if (pieces[0] == "description") {
+	    			sectionData[pieces[0]] = pieces[1]
+	    		} else if (pieces[0] == "audio") {
+	    			audioArray.push(pieces[1])	
+	    		}
+	    		
+	    		if (index == (lines.length - 1)) {
+	    			sectionData["audios"] = audioArray
+	    			radioData["sections"].push(sectionData)
+	    		}
+	    	})
+	    	
+	    	$("#radio_title").html(radioData["title"])
+	    	
+	    	sectionsHtml = ""
+	    	$(radioData["sections"]).each(function() {
+	    		if (sectionsHtml != "") {
+	    			sectionsHtml += "<hr/>"	    			
+	    		}
+	    		sectionsHtml += "<h1 class=\"tk-source-sans-pro\">" + this["section"] + "</h1>"
+	    		sectionsHtml += "<p>" + this["description"] + "</p>"
+	    		
+	    		$(this["audios"]).each(function() {
+	    			sectionsHtml += "<div class=\"col-md-6\"><iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" src=\"" + this + "\"></iframe></div>"
+	    		})
+	    		
+	    	})
+	    	
+	    	$("#camera_sections").html(sectionsHtml)
+	    	
+  		}, 'text');
+    </script>
 
 <!-- Contact us -->
 <div class="contact_us hidden">
