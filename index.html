@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
-<link rel="stylesheet" href="js/vendors/swiper.min.css"></script>  
+<link rel="stylesheet" href="js/vendors/swiper.min.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">
 <link href='https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff' rel='css' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,400italic,300,600,600italic,700,700italic,800,800italic' rel='css' type='text/css'>
@@ -215,7 +215,6 @@
 	    		}
 	    	})
 	    	
-	    	console.log(cameraData)
 	    	$("#camera_title").html(cameraData["title"])
 	    	
 	    	sectionsHtml = ""
@@ -242,38 +241,7 @@
 <!-- work -->
 <div class="products hidden">
 <div id="radio_title" class="page_name tk-museo-sans"></div>
-<div id="radio_sections">
-	<div class="col-md-6">
-	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/294793574&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-	</div>
-	    
-	<div class="col-md-6">
-	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/294794145&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-	</div>
-	 
-	<div class="col-md-6">
-	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774907&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-	</div>    
-	
-	<div class="col-md-6">
-	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774904&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-	</div>
-	    
-	<div class="col-md-6">
-	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774902&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-	</div>
-	    
-	<div class="col-md-6">
-	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774901&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-	</div> 
-	    
-	<div class="col-md-6">
-	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296774896&amp;color=84bcda&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-	</div>
-</div>
-    
-</div>
-</div>
+<div id="radio_sections"></div>
 
 	<script>
      	radioData = {}
@@ -313,6 +281,8 @@
 	    		}
 	    	})
 	    	
+	    	
+	    	console.log(radioData)
 	    	$("#radio_title").html(radioData["title"])
 	    	
 	    	sectionsHtml = ""
@@ -329,10 +299,12 @@
 	    		
 	    	})
 	    	
-	    	$("#camera_sections").html(sectionsHtml)
+	    	console.log(sectionsHtml)
+	    	$("#radio_sections").html(sectionsHtml)
 	    	
   		}, 'text');
     </script>
+</div>
 
 <!-- Contact us -->
 <div class="contact_us hidden">
