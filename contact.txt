@@ -1,0 +1,7 @@
+title:CONTACT COURTNEY
+heading:Drop her a line.
+description:For business inquiries and more, contact Courtney Mims through this site.
+location_maps:https://www.google.com/maps/embed/v1/place?q=University of Florida, Gainesville, FL&key=AIzaSyAVk-o-EKPBOgtHwdNY1zJvcqKWM-g1drI
+name:Courtney Mims
+location_text:University of Florida, Gainesville, FL
+email:courtneymims@hotmail.com

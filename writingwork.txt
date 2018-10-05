@@ -65,7 +65,7 @@ article_link:http://www.wuft.org/news/2016/11/01/gfr-person-trapped-in-gainesvil
 article_img:https://pbs.twimg.com/media/CwLrQvNWIAA4vxa.jpg
 article_vert_offset:-150px
 
-article_title:Hermine’s Aftermath Still Hampering Cedar Key
+article_title:Hermine's Aftermath Still Hampering Cedar Key
 article_date:September 6, 2016
 article_link:http://www.wuft.org/news/2016/09/06/hermines-aftermath-still-hampering-cedar-key/
 article_img:http://www.wuft.org/news/files/2016/09/1.jpg
