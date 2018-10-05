@@ -15,6 +15,7 @@
 <link href='https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff' rel='css' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,400italic,300,600,600italic,700,700italic,800,800italic' rel='css' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='css' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
@@ -114,7 +115,7 @@
 
    <!-- about-->
     <div class="about_us hidden">
-      <div class="page_name tk-museo-sans">About Courtney</div>
+      <div id="about_title" class="page_name tk-museo-sans"></div>
       <h1 class="tk-source-sans-pro">Meet Courtney Mims.</h1>
       <div class="social-buttons">
      <a class="facebook" href="#" target="_blank"></a>
@@ -146,6 +147,13 @@
         <div class="photo-img"><img src="images/JRB/Edited/CourtneySportsStanding.jpg" alt="Sarah Smith" /></div>
       </div>
     </div>
+    
+    <script>
+	    $.get('about.txt', function(data) {
+    	   console.log(data)
+    	}, 'text');
+    	$("#about_title").html("About Courtney")
+    </script>
   
   <!-- What we do-->  
 <div class="what_we_do hidden">

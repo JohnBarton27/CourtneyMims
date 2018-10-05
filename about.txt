@@ -1,0 +1,9 @@
+title:About Courtney
+header:Meet Courtney Mims
+text:Courtney Mims is a second year telecommunications student at the University of Florida. She has worked previously with Sports Radio 1560 "The Fan" with Cumulus Media in Melbourne as an intern for the Mark Moses Show. She is currently working as a multi-media journalist for WUFT's 89.1 and a Gators Football/basketball beat reporter for College Primetime.
+name:Courtney Mims
+email:courtneymims@hotmail.com
+location:Gainesville, FL
+twitter:https://twitter.com/MimsCourtney
+linkedin:http://www.linkedin.com/in/mimsthejournalistfloridaneeds
+photo:images/JRB/Edited/CourtneySportsStanding.jpg
