@@ -1,12 +1,12 @@
 title:On-Camera Work
 section:Reel 
-desrciption:Courtney's most recent resume reel of her work. 
+description:Courtney's most recent resume reel of her work. 
 video:https://youtu.be/embed/6_-X5qgRBNE
 
 section:WUFT First at Five 
 description:Since Spring 2017, Courtney has anchored WUFT's First at Five sports segment on Tuesday, Wednesday and Friday. 
-video:https://youtu.be/embed/mOw3DJw1bkU
-video:https://youtu.be/embed/pkgb5LG3rPQ
+video:https://www.youtube.com/embed/mOw3DJw1bkU
+video:https://www.youtube.com/embed/pkgb5LG3rPQ
 video:https://youtu.be/embed/CmLkmp_mkQU
 video:https://youtu.be/embed/G_TsalccRmg
 video:https://youtu.be/embed/lX8GvLzN3Vo
