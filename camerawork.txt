@@ -1,31 +1,31 @@
 title:On-Camera Work
 section:Reel 
 description:Courtney's most recent resume reel of her work. 
-video:https://youtu.be/embed/6_-X5qgRBNE
+video:https://www.youtube.com/embed/6_-X5qgRBNE
 
 section:WUFT First at Five 
 description:Since Spring 2017, Courtney has anchored WUFT's First at Five sports segment on Tuesday, Wednesday and Friday. 
 video:https://www.youtube.com/embed/mOw3DJw1bkU
 video:https://www.youtube.com/embed/pkgb5LG3rPQ
-video:https://youtu.be/embed/CmLkmp_mkQU
-video:https://youtu.be/embed/G_TsalccRmg
-video:https://youtu.be/embed/lX8GvLzN3Vo
-video:https://youtu.be/embed/EajSbuhjt7c
-video:https://youtu.be/embed/hWaLshoW7Fw
-video:https://youtu.be/embed/SnfP_ZEAbR0
-video:https://youtu.be/embed/CFi7vohmss8
+video:https://www.youtube.com/embed/CmLkmp_mkQU
+video:https://www.youtube.com/embed/G_TsalccRmg
+video:https://www.youtube.com/embed/lX8GvLzN3Vo
+video:https://www.youtube.com/embed/EajSbuhjt7c
+video:https://www.youtube.com/embed/hWaLshoW7Fw
+video:https://www.youtube.com/embed/SnfP_ZEAbR0
+video:https://www.youtube.com/embed/CFi7vohmss8
 
 section:WUFT Packages
 description:Courtney has produced multiple sports packages for the station. These are her favorites. 
-video:https://youtu.be/embed/9n8c4e4y-c0
-video:https://youtu.be/embed/kQAKf7Hf2DM
+video:https://www.youtube.com/embed/9n8c4e4y-c0
+video:https://www.youtube.com/embed/kQAKf7Hf2DM
 
 section:WCJB TV20 
 description:Courtney was a sports intern for WCJB TV20 from June 2018 - August 2018. 
-video:https://youtu.be/embed/o5tRYNQ5rng
-video:https://youtu.be/embed/GTqjZEWsXiE
-video:https://youtu.be/embed/VjTK8x_6MrA
-video:https://youtu.be/embed/j1hGOFuf5AE
+video:https://www.youtube.com/embed/o5tRYNQ5rng
+video:https://www.youtube.com/embed/GTqjZEWsXiE
+video:https://www.youtube.com/embed/VjTK8x_6MrA
+video:https://www.youtube.com/embed/j1hGOFuf5AE
 
 section:WUFT Sports in 60 
 description:Since Fall 2016, Courtney has hosted WUFT's "Sports in 60" segment multiple times.
