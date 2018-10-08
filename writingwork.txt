@@ -2,6 +2,136 @@ title:Writing
 
 section:WRUF
 
+article_title:Gators Defense Impresses in Win Over LSU
+article_date:October 7, 2018
+article_link:http://www.wruf.com/headlines/2018/10/07/gators-defense-impresses-in-win-over-lsu/
+article_img:http://www.wruf.com/wp-content/uploads/2018/10/brad-stewart-660x330.jpg
+
+article_title:No. 9 Tennessee Takes Down Florida
+article_date:October 5, 2018
+article_link:http://www.wruf.com/headlines/2018/10/05/no-9-tennessee-takes-down-florida/
+article_img:http://www.wruf.com/wp-content/uploads/2018/09/Huddle_180831_3221_TimCasey-660x330.jpg
+
+article_title:Kansas City Chiefs Stay Unbeaten After Win Over Broncos
+article_date:October 2, 2018
+article_link:http://www.wruf.com/headlines/2018/10/02/kansas-city-chiefs-stay-unbeaten-win-broncos/
+article_img:http://www.wruf.com/wp-content/uploads/2018/10/AP18275083791803-660x330.jpg
+
+article_title:Browns’ Mayfield Lands Starting Quarterback Job
+article_date:September 25, 2018
+article_link:http://www.wruf.com/headlines/2018/09/25/baker-mayfield-lands-starting-quarterback-job/
+article_img:http://www.wruf.com/wp-content/uploads/2018/09/AP18267512686425-660x330.jpg
+
+article_title:New York Jets Win Big Against Detroit Lions, 48-17
+article_date:September 11, 2018 
+article_link:http://www.wruf.com/headlines/2018/09/11/jets-win-big-against-lions-with-sam-darnold-at-the-helm/
+article_img:http://www.wruf.com/wp-content/uploads/2018/09/AP18254097092628-660x330.jpg
+
+article_title:New Faces at Quarterback in Week 1 of NFL Season
+article_date:September 4, 2018
+article_link:http://www.wruf.com/headlines/2018/09/04/new-faces-quarterback-week-1-nfl-season/
+article_img:http://www.wruf.com/wp-content/uploads/2018/09/AP18246698124953-660x330.jpg
+
+article_title:Feleipe Franks Impresses in Gator Season Opener
+article_date:September 2, 2018
+article_link:http://www.wruf.com/headlines/2018/09/02/feleipe-franks-impresses-gators-season-opener/
+article_img:http://www.wruf.com/wp-content/uploads/2018/09/FootballCharlestonSouthern_1535_JayMetz-660x330.jpg
+
+article_title:Nick Saban Still Unsure of Who Alabama Starting QB Will Be
+article_date:August 28, 2018
+article_link:http://www.wruf.com/headlines/2018/08/28/nick-saban-still-unsure-of-who-starting-quarterback-will-be/
+article_img:http://www.wruf.com/wp-content/uploads/2018/07/AP18199644476155-e1532115435597-660x330.jpg
+
+article_title:Santa Fe Raiders Show What They Are Made of in Win Over Newberry Pathers
+article_date:August 25, 2018
+article_link:http://www.wruf.com/headlines/2018/08/25/santa-fe-raiders-show-made-win-newberry-pathers/
+article_img:http://www.wruf.com/wp-content/uploads/2018/08/IMG_3561-660x330.jpg
+
+article_title:Carson Wentz Could Be Back Week 1 of NFL Season
+article_date:August 21, 2018
+article_link:http://www.wruf.com/headlines/2018/08/21/carson-wentz-could-be-back-week-1-of-nfl-season/
+article_img:http://www.wruf.com/wp-content/uploads/2016/09/USATSI_9553817-e1474376832273-660x330.jpg
+
+article_title:Gators Running Backs Stacked Heading into Season
+article_date:August 3, 2018
+article_link:http://www.wruf.com/headlines/2018/08/03/gators-running-backs-stacked-heading-season/
+article_img:http://www.wruf.com/wp-content/uploads/2017/08/USATSI_9671013_168381752_lowres-e1533315846728-660x330.jpg
+
+article_title:Florida Gator Presence in Dartmouth Football Program
+article_date:July 27, 2018
+article_link:http://www.wruf.com/headlines/2018/07/27/florida-gator-presence-stanford-coaching-staff/
+article_img:http://www.wruf.com/wp-content/uploads/2018/07/buddy_teevens_harv15_jr_810-660x330.jpg
+
+article_title:Alabama Predicted to Win 2018 SEC Championship
+article_date:July 20, 2018
+article_link:http://www.wruf.com/headlines/2018/07/20/alabama-predicted-to-win-2018-sec-championship/
+article_img:http://www.wruf.com/wp-content/uploads/2018/07/AP18199644476155-e1532115435597-660x330.jpg
+
+article_title:South Carolina Basketball: Where Will They Land this Season?
+article_date:July 13, 2018
+article_link:http://www.wruf.com/headlines/2018/07/13/south-carolina-basketball-where-will-they-land-this-season/
+article_img:http://www.wruf.com/wp-content/uploads/2018/01/South-Carolina-USAT-660x330.jpg
+
+article_title:Preview: Kentucky Basketball in Good Shape for 2018-19 Season
+article_date:July 6, 2018
+article_link:http://www.wruf.com/headlines/2018/07/06/kentucky-basketball-preview/
+article_img:http://www.wruf.com/wp-content/uploads/2018/03/USATSI_10695832_168381752_lowres-e1530898845534-660x330.jpg
+
+article_title:Gators Softball Seniors and Their New Beginnings
+article_date:June 4, 2018 
+article_link:http://www.wruf.com/headlines/2018/06/04/gators-softball-seniors-new-beginnings/
+article_img:http://www.wruf.com/wp-content/uploads/2018/06/WheatonJanellOcasioAleshiaKvistadKayliDeWittNicole_180428_7335_TimCasey-660x330.jpg
+
+article_title:Gator Fans Unite for Women’s College World Series
+article_date:June 2, 2018
+article_link:http://www.wruf.com/headlines/2018/06/02/gator-fans-unite-womens-college-world-series/
+article_img:http://www.wruf.com/wp-content/uploads/2018/06/IMG_4935-660x330.jpg
+
+article_title:Gators Softball Crushes Mississippi State in Game One
+article_date:April 21, 2018
+article_link:http://www.wruf.com/headlines/2018/04/21/gators-softball-crushes-mississippi-state-game-one/
+article_img:http://www.wruf.com/wp-content/uploads/2017/03/IMG_3454-660x330.jpg
+
+article_title:No. 6 Gator Softball Struggles Against No. 13 Florida State, Lose 4-1
+article_date:April 12, 2018
+article_link:http://www.wruf.com/headlines/2018/04/12/no-6-gator-softball-struggles-no-13-florida-state-lose-4-1/
+article_img:http://www.wruf.com/wp-content/uploads/2018/04/OcasioAleshia_SB_9008_170322_JimBurgess-660x330.jpg
+
+article_title:No. 6 Florida Softball Sweeps No. 8 Texas A&M
+article_date:March 27, 2018
+article_link:http://www.wruf.com/headlines/2018/03/27/no-6-florida-softball-sweeps-no-8-texas/
+article_img:http://www.wruf.com/wp-content/uploads/2018/03/lorenz-660x330.jpg
+
+article_title:P.K. Yonge Hosts Regional Final Against Jacksonville Providence
+article_date:February 26, 2018
+article_link:http://www.wruf.com/headlines/2018/02/26/p-k-yonge-hosts-regional-final-jacksonville-providence/
+article_img:http://www.wruf.com/wp-content/uploads/2018/02/IMG_4496-660x330.jpg
+
+article_title:Coach Hevesy Back With His “Brothers”
+article_date:February 19, 2018
+article_link:http://www.wruf.com/headlines/2018/02/19/coach-hevesy-back-brothers/
+article_img:http://www.wruf.com/wp-content/uploads/2018/02/hevesy--660x330.jpg
+
+article_title:Brian Urlacher Added to the Football Hall of Fame
+article_date:February 5, 2018 
+article_link:http://www.wruf.com/headlines/2018/02/05/brian-urlacher-added-football-hall-fame/
+article_img:http://www.wruf.com/wp-content/uploads/2018/02/USATSI_10461738-660x330.jpg
+
+article_title:Santa Fe Saints Softball Season Starts Off With a Bang
+article_date:January 29, 2018
+article_link:http://www.wruf.com/headlines/2018/01/29/santa-fe-saints-softball-season-starts-off-bang/
+article_img:http://www.wruf.com/wp-content/uploads/2016/11/Santa-Fe-Saints-e1534864733636-512x330.jpg
+
+article_title:Good Vikings Season Crashes Down
+article_date:January 22, 2018
+article_link:http://www.wruf.com/headlines/2018/01/22/good-vikings-season-crashes/
+article_img:http://www.wruf.com/wp-content/uploads/2018/01/USATSI_10558968-660x330.jpg
+
+article_title:Kentucky Takes on Texas A&M
+article_date:January 9, 2018
+article_link:http://www.wruf.com/headlines/2018/01/09/kentucky-takes-texas-tonight/
+article_img:http://www.wruf.com/wp-content/uploads/2017/11/USATSI_10354242_168381752_lowres-e1515539177751-660x330.jpg
+
 article_title:NFL Preview: Jaguars vs. Bengals
 article_date:November 3, 2017
 article_link:http://www.wruf.com/headlines/2017/11/03/nfl-preview-jaguars-vs-bengals/
