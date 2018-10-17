@@ -88,8 +88,8 @@
         <a href="#" class="colour_link blog" data-current="false">
         <span data-colour="#6a8eae" data-name="contact_us" class="colour" >
         <span>
-        <i class="menu-img icon-envelope"></i>
-        Contact Courtney
+        <i class="menu-img fa fa-camera"></i>
+        Photography
   
         </span>
         </span>
@@ -312,25 +312,15 @@
 
 <!-- Contact us -->
 <div class="contact_us hidden">
-<div id="contact_title" class="page_name tk-museo-sans"></div>
-<h1 id="contact_heading" class="tk-source-sans-pro"></h1>
+<div id="photography_title" class="page_name tk-museo-sans"></div>
+<h1 id="photography_heading" class="tk-source-sans-pro"></h1>
 <div class="paragraphs tk-source-sans-pro">
-  <div id="contact_description" class="normal-text"></div>
+  <div id="photography_description" class="normal-text"></div>
   <br>
 
   <div class="paragraphs no-columns tk-source-sans-pro">
     <div class="block row">
-    <div style="margin-left:15px; margin-bottom: 75px;">
-        <iframe id="contact_location_maps" height="280" frameborder="0" style="border:0; width:100%"></iframe>
-        <address>
-        <strong id="contact_name"></strong>
-        <span id="contact_location_text"></span> - <strong id="contact_email"></strong>
-        </address>
-      </div>
-      <div class="col-md-6">
-        <a id="contact_mailto" target="_top" style="font-family: 'Montserrat', sans-serif;"><span id="contact_email_text" style="border:5px solid black; padding-left: 50px; padding-right: 50px; padding-top: 25px; padding-bottom: 25px; margin: 25px; font-size: 36pt;"></span></a>
-      </div>
-      
+		<p>Hello!</p>      
     </div>
   </div>
 </div>
@@ -344,16 +334,16 @@
 	    		contactData[pieces[0]] = pieces[1]
 	    	})
 			
-	    	$("#contact_title").html(contactData["title"])
-	    	$("#contact_heading").html(contactData["heading"])
-	    	$("#contact_description").html(contactData["description"])
-	    	$("#contact_name").html(contactData["name"])
-	    	$("#contact_location_text").html(contactData["location_text"])
-	    	$("#contact_email").html(contactData["email"])
-	    	$("#contact_email_text").html(contactData["email_text"])
+	    	$("#photography_title").html(contactData["title"])
+	    	$("#photography_heading").html(contactData["heading"])
+	    	$("#photography_description").html(contactData["description"])
+	    	$("#photography_name").html(contactData["name"])
+	    	$("#photography_location_text").html(contactData["location_text"])
+	    	$("#photography_email").html(contactData["email"])
+	    	$("#photography_email_text").html(contactData["email_text"])
 	    	
-	    	$("#contact_location_maps").attr("src", contactData["location_maps"])
-	    	$("#contact_mailto").attr("href", "mailto:" + contactData["email"])
+	    	$("#photography_location_maps").attr("src", contactData["location_maps"])
+	    	$("#photography_mailto").attr("href", "mailto:" + contactData["email"])
 	    	
 	    	
     	}, 'text');
