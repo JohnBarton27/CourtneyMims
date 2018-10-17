@@ -27,11 +27,11 @@
       <div class="home-block">
         <div class="social-buttons"> 
         <!--<a class="facebook" href="#" target="_blank"></a>-->
-        <a class="twitter" href="https://twitter.com/MimsCourtney" target="_blank"></a>
+        <a id="main_twitter" class="twitter" target="_blank"></a>
         <!--<a class="google-plus" href="#" target="_blank"></a>
         <a class="rss" href="#" target="_blank"></a>
         <a class="pintrest" href="#" target="_blank"></a>-->
-        <a class="linkedin" href="http://www.linkedin.com/in/mimsthejournalistfloridaneeds" target="_blank"></a>
+        <a id="main_linkedin" class="linkedin" target="_blank"></a>
  
         </div>
         
@@ -167,6 +167,9 @@
 	    	$("#about_twitter").attr("href", aboutData["twitter"])
 	    	$("#about_linkedin").attr("href", aboutData["linkedin"])	    	
 	    	$("#about_photo").attr("src", aboutData["photo"])
+	    	
+	    	$("#main_twitter").attr("href", aboutData["twitter"])
+	    	$("#main_linkedin").attr("href", aboutData["linkedin"])
 	    	
     	}, 'text');
     </script>
@@ -321,7 +324,7 @@
         <iframe id="contact_location_maps" height="280" frameborder="0" style="border:0; width:100%"></iframe>
         <address>
         <strong id="contact_name"></strong>
-        <p id="contact_location_text"><p> - <strong id="contact_email"></strong>
+        <span id="contact_location_text"></span> - <strong id="contact_email"></strong>
         </address>
       </div>
       <div class="col-md-6">
