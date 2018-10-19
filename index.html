@@ -319,15 +319,23 @@
   <div id="photography_description" class="normal-text"></div>
   <br>
 
-  <div class="paragraphs no-columns tk-source-sans-pro">
-   	<!-- 1. Link to jQuery (1.8 or later), -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+  <div id="photography_sections" class="paragraphs no-columns tk-source-sans-pro">
+	<!-- Fotorama -->
 	
 	<!-- fotorama.css & fotorama.js. -->
-	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+	<link  href="css/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+	<script type="text/javascript" src="js/fotorama.js"></script> <!-- 16 KB -->
 	
 	<!-- 2. Add images to <div class="fotorama"></div>. -->
+	<h1 class="tk-source-sans-pro">SECTION1</h1
+	><p>undefined</p>
+	<div class="fotorama" data-nav="thumbs" data-fit="scaledown" data-width="1000" data-height="600" data-thumbheight="200" style="margin-left:100px;">
+		<a href="https://www.courtneymims.com/images/JRB/IMG_0807.JPG"><img src="https://www.courtneymims.com/images/JRB/IMG_0807.JPG" width="200" height="200"></a>
+		<a href="https://www.courtneymims.com/images/JRB/IMG_0816.JPG"><img src="https://www.courtneymims.com/images/JRB/IMG_0816.JPG" width="200" height="200"></a>
+		<a href="https://www.courtneymims.com/images/JRB/IMG_0851.JPG"><img src="https://www.courtneymims.com/images/JRB/IMG_0851.JPG" width="200" height="200"></a>
+		<a href="https://www.courtneymims.com/images/JRB/IMG_1130.JPG"><img src="https://www.courtneymims.com/images/JRB/IMG_1130.JPG" width="200" height="200"></a>
+	</div>
+		
 		
 	<!-- 3. Enjoy! -->
   </div	>
@@ -336,7 +344,8 @@
 	
 	
    	photographyData = {}
-    $.get('https://www.courtneymims.com/photography.txt', function(data) {
+   	photographyData["sections"] = []
+/*    $.get('https://www.courtneymims.com/photography.txt', function(data) {
     	lines = data.split("\n")
     	
     	// Set up data structure
@@ -366,13 +375,13 @@
     		}
     		
     		if (index == (lines.length - 1)) {
-    			sectionData["pics"] = audioArray
-    			photographyData["sections"].push(sectionData)
+    			sectionData["pics"] = picArray
+    			//photographyData["sections"].push(sectionData)
     		}
     	})
     	
     	
-    	console.log(radioData)
+    	console.log(photographyData)
     	$("#photography_title").html(photographyData["title"])
     	
     	sectionsHtml = ""
@@ -393,9 +402,11 @@
     		
     	})
 
-    	$("#radio_sections").html(sectionsHtml)
+   		console.log(sectionsHtml)
     	
-		}, 'text');
+    	$("#photography_sections").html(sectionsHtml)
+    	
+		}, 'text'); */
     </script>
 
 </div>
