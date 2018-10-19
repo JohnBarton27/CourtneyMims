@@ -17,6 +17,7 @@
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='css' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+
 </head>
 
 <body>
@@ -310,7 +311,7 @@
     </script>
 </div>
 
-<!-- Contact us -->
+<!-- Photography -->
 <div class="contact_us hidden">
 <div id="photography_title" class="page_name tk-museo-sans"></div>
 <h1 id="photography_heading" class="tk-source-sans-pro"></h1>
@@ -319,34 +320,79 @@
   <br>
 
   <div class="paragraphs no-columns tk-source-sans-pro">
-    <div class="block row">
-		<p>Hello!</p>      
-    </div>
+   	<!-- 1. Link to jQuery (1.8 or later), -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+	
+	<!-- fotorama.css & fotorama.js. -->
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+	
+	<!-- 2. Add images to <div class="fotorama"></div>. -->
+		
+	<!-- 3. Enjoy! -->
   </div>
 </div>
 	<script>
-    	contactData = {}
-	    $.get('https://www.courtneymims.com/contact.txt', function(data) {
-	    	lines = data.split("\n")
-	    	
-	    	$(lines).each(function() {
-	    		pieces = this.split(/:(.+)/)
-	    		contactData[pieces[0]] = pieces[1]
-	    	})
-			
-	    	$("#photography_title").html(contactData["title"])
-	    	$("#photography_heading").html(contactData["heading"])
-	    	$("#photography_description").html(contactData["description"])
-	    	$("#photography_name").html(contactData["name"])
-	    	$("#photography_location_text").html(contactData["location_text"])
-	    	$("#photography_email").html(contactData["email"])
-	    	$("#photography_email_text").html(contactData["email_text"])
-	    	
-	    	$("#photography_location_maps").attr("src", contactData["location_maps"])
-	    	$("#photography_mailto").attr("href", "mailto:" + contactData["email"])
-	    	
-	    	
-    	}, 'text');
+	
+	
+   	photographyData = {}
+    $.get('https://www.courtneymims.com/photography.txt', function(data) {
+    	lines = data.split("\n")
+    	
+    	$(lines).each(function(index) {
+    		pieces = this.split(/:(.+)/)
+    		
+    		if (pieces[0] == "title") {
+    			// Set title of page
+    			photographyData[pieces[0]] = pieces[1]
+    		} else if (pieces[0] == "section") {
+    			// If there was a previous section, add it
+    			if (Object.keys(sectionData).length != 0) {
+    				sectionData["pics"] = picArray
+    				photographyData["sections"].push(sectionData)
+    				sectionData = {}
+    				picArray = []
+    			}
+    			
+    			//Start new section
+    			sectionData[pieces[0]] = pieces[1]
+    		} else if (pieces[0] == "description") {
+    			sectionData[pieces[0]] = pieces[1]
+    		} else if (pieces[0] == "pic") {
+    			picArray.push(pieces[1])	
+    		}
+    		
+    		if (index == (lines.length - 1)) {
+    			sectionData["pics"] = audioArray
+    			photographyData["sections"].push(sectionData)
+    		}
+    	})
+    	
+    	
+    	console.log(radioData)
+    	$("#photography_title").html(photographyData["title"])
+    	
+    	sectionsHtml = ""
+    	$(photographyData["sections"]).each(function() {
+    		if (sectionsHtml != "") {
+    			sectionsHtml += "<hr/>"	    			
+    		}
+    		sectionsHtml += "<h1 class=\"tk-source-sans-pro\">" + this["section"] + "</h1>"
+    		sectionsHtml += "<p>" + this["description"] + "</p>"
+    		
+    		sectionsHtml += "<div class=\"fotorama\" data-nav=\"thumbs\" data-fit=\"scaledown\" data-width=\"1000\" data-height=\"600\" data-thumbheight=\"200\" style=\"margin-left:100px;\">"
+    		
+    		$(this["pics"]).each(function() {
+    			sectionsHtml += "<a href=\"" + this + "\"><img src=\"" + this + "\" width=\"200\" height=\"200\"></a>"
+    		})
+    		
+    		sectionsHtml += "</div>"
+    		
+    	})
+
+    	$("#radio_sections").html(sectionsHtml)
+    	
+		}, 'text');
     </script>
 
 </div>
