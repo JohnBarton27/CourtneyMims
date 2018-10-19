@@ -1,12 +1,14 @@
 title:PHOTOGRAPHY
 
 section:SECTION1
+description:DESCRIPTION1
 pic:https://www.courtneymims.com/images/JRB/IMG_0807.JPG
 pic:https://www.courtneymims.com/images/JRB/IMG_0816.JPG
 pic:https://www.courtneymims.com/images/JRB/IMG_0851.JPG
 pic:https://www.courtneymims.com/images/JRB/IMG_1130.JPG
 
 section:SECTION2
+description:DESCRIPTION2
 pic:https://www.courtneymims.com/images/JRB/IMG_1571.JPG
 pic:https://www.courtneymims.com/images/JRB/IMG_1511.JPG
 pic:https://www.courtneymims.com/images/JRB/IMG_1618.JPG
