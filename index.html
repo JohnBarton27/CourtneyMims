@@ -330,7 +330,7 @@
 	<!-- 2. Add images to <div class="fotorama"></div>. -->
 		
 	<!-- 3. Enjoy! -->
-  </div>
+  </div	>
 </div>
 	<script>
 	
@@ -339,6 +339,9 @@
     $.get('https://www.courtneymims.com/photography.txt', function(data) {
     	lines = data.split("\n")
     	
+    	// Set up data structure
+    	picArray = []
+    	sectionData = {}
     	$(lines).each(function(index) {
     		pieces = this.split(/:(.+)/)
     		
