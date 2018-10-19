@@ -2,8 +2,8 @@ title:PHOTOGRAPHY
 
 section:Football Photos 
 description:Photos of the Gator football team 
-pic:
-pic:https://www.courtneymims.com/images/JRB/IMG_0816.JPG
+pic:https://www.courtneymims.com/images/
+pic:https://www.courtneymims.com/images/FranksFeleipe_180915_8930_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/JRB/IMG_0851.JPG
 pic:https://www.courtneymims.com/images/JRB/IMG_1130.JPG
 
