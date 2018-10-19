@@ -7,8 +7,8 @@ pic:https://www.courtneymims.com/images/FranksFeleipe_180915_8930_CourtneyMims.j
 pic:https://www.courtneymims.com/images/JRB/IMG_0851.JPG
 pic:https://www.courtneymims.com/images/JRB/IMG_1130.JPG
 
-section:SECTION2
-description:DESCRIPTION2
+section:Soccer Photos
+description:Photos of the Gator soccer team 
 pic:https://www.courtneymims.com/images/JRB/IMG_1571.JPG
 pic:https://www.courtneymims.com/images/JRB/IMG_1511.JPG
 pic:https://www.courtneymims.com/images/JRB/IMG_1618.JPG
