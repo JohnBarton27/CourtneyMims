@@ -9,6 +9,8 @@ pic:https://www.courtneymims.com/images/Band_180915_8108_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/_180915_8834_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/IveyMartezJohnsonFredScarlettJordan_180915_8782_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/Team_180915_8304_CourtneyMims.jpg
+pic:https://www.courtneymims.com/images/JonesEmory_180414_0258_CourtneyMims.jpg
+pic:https://www.courtneymims.com/images/JonesEmory_180414_0259_CourtneyMims.jpg
 
 
 section:Soccer Photos
