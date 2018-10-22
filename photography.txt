@@ -8,12 +8,10 @@ pic:https://www.courtneymims.com/images/FranksFeleipe_180915_8905_CourtneyMims.j
 pic:https://www.courtneymims.com/images/Band_180915_8108_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/_180915_8834_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/IveyMartezJohnsonFredScarlettJordan_180915_8782_CourtneyMims.jpg
+pic:https://www.courtneymims.com/images/Team_180915_8304_CourtneyMims.jpg
+
 
 section:Soccer Photos
 description:Photos of the Gator soccer team 
-pic:https://www.courtneymims.com/images/JRB/IMG_1571.JPG
+pic:https://www.courtneymims.com/images/_180831_3694_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/JRB/IMG_1511.JPG
-pic:https://www.courtneymims.com/images/JRB/IMG_1618.JPG
-pic:https://www.courtneymims.com/images/JRB/IMG_1686.JPG
-pic:https://www.courtneymims.com/images/JRB/IMG_1920.JPG
-pic:https://www.courtneymims.com/images/JRB/IMG_1726.JPG
