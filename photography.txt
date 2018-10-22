@@ -12,8 +12,14 @@ pic:https://www.courtneymims.com/images/Team_180915_8304_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/JonesEmory_180414_0258_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/JonesEmory_180414_0259_CourtneyMims.jpg
 
-
 section:Soccer Photos
 description:Photos of the Gator soccer team 
 pic:https://www.courtneymims.com/images/_180831_3694_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/JRB/IMG_1511.JPG
+
+section:Baseball Photos 
+description:Photos of the Gator baseball team 
+
+section:Volleyball Photos 
+description:Photos of the Gator volleyball team 
+
