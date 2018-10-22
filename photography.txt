@@ -4,8 +4,10 @@ section:Football Photos
 description:Photos of the Gator football team 
 pic:https://www.courtneymims.com/images/FranksFeleipe_180414_0310_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/FranksFeleipe_180915_8930_CourtneyMims.jpg
-pic:https://www.courtneymims.com/images/JRB/IMG_0851.JPG
-pic:https://www.courtneymims.com/images/JRB/IMG_1130.JPG
+pic:https://www.courtneymims.com/images/FranksFeleipe_180915_8905_CourtneyMims.jpg
+pic:https://www.courtneymims.com/images/Band_180915_8108_CourtneyMims.jpg
+pic:https://www.courtneymims.com/images/_180915_8834_CourtneyMims.jpg
+pic:https://www.courtneymims.com/images/IveyMartezJohnsonFredScarlettJordan_180915_8782_CourtneyMims.jpg
 
 section:Soccer Photos
 description:Photos of the Gator soccer team 
