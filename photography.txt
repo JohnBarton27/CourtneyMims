@@ -20,18 +20,23 @@ pic:https://www.courtneymims.com/images/_180831_3523_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/Screen Shot 2018-10-22 at 10.03.41 PM
 pic:https://www.courtneymims.com/images/Screen Shot 2018-10-22 at 10.03.01 PM
 pic:https://www.courtneymims.com/images/Screen Shot 2018-10-22 at 10.01.51 PM
+pic:https://www.courtneymims.com/images/22860020_1955488964776026_4564023049224617863_o.jpg
 
 section:Baseball Photos 
 description:Photos of the Gator baseball team 
 pic:https://www.courtneymims.com/images/ReeseBlake_180218_1651_CourtneyMims.jpg
+pic:https://www.courtneymims.com/images/_180210_0177_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/MaldonadoNelson_180325_8738_CourtneyMims_preview-660x330.jpeg
 
 section:Basketball Photos 
 description:Photos of the Gator men's basketball team 
+pic:https://www.courtneymims.com/images/AllenKeVaughn_180124_6283_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/WhiteMike_171204_0529_CourtneyMims.jpg
+
 
 section:Gymnastics Photos 
 description:Photos of the Gator gymnastics team 
+pic:https://www.courtneymims.com/images/BakerKennedy_180209_8860_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/BaumannAlyssa_180209_8662_CourtneyMims.jpg
 
 
