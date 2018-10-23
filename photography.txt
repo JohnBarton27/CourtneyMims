@@ -16,7 +16,7 @@ pic:https://www.courtneymims.com/images/HelmetDetail_180915_8741_CourtneyMims.jp
 section:Soccer Photos
 description:Photos of the Gator soccer team 
 pic:https://www.courtneymims.com/images/_180831_3694_CourtneyMims.jpg
-pic:https://www.courtneymims.com/images/
+pic:https://www.courtneymims.com/images/_180831_3523_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/Screen Shot 2018-10-22 at 10.03.41 PM
 pic:https://www.courtneymims.com/images/Screen Shot 2018-10-22 at 10.03.01 PM
 pic:https://www.courtneymims.com/images/Screen Shot 2018-10-22 at 10.01.51 PM
