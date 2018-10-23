@@ -11,14 +11,27 @@ pic:https://www.courtneymims.com/images/IveyMartezJohnsonFredScarlettJordan_1809
 pic:https://www.courtneymims.com/images/Team_180915_8304_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/JonesEmory_180414_0258_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/JonesEmory_180414_0259_CourtneyMims.jpg
+pic:https://www.courtneymims.com/images/HelmetDetail_180915_8741_CourtneyMims.jpg
 
 section:Soccer Photos
 description:Photos of the Gator soccer team 
 pic:https://www.courtneymims.com/images/_180831_3694_CourtneyMims.jpg
+pic:https://www.courtneymims.com/images/
+pic:https://www.courtneymims.com/images/Screen Shot 2018-10-22 at 10.03.41 PM
+pic:https://www.courtneymims.com/images/Screen Shot 2018-10-22 at 10.03.01 PM
+pic:https://www.courtneymims.com/images/Screen Shot 2018-10-22 at 10.01.51 PM
 
 section:Baseball Photos 
 description:Photos of the Gator baseball team 
+pic:https://www.courtneymims.com/images/ReeseBlake_180218_1651_CourtneyMims.jpg
+pic:https://www.courtneymims.com/images/MaldonadoNelson_180325_8738_CourtneyMims_preview-660x330.jpeg
 
-section:Volleyball Photos 
-description:Photos of the Gator volleyball team 
+section:Basketball Photos 
+description:Photos of the Gator men's basketball team 
+pic:https://www.courtneymims.com/images/WhiteMike_171204_0529_CourtneyMims.jpg
+
+section:Gymnastics Photos 
+description:Photos of the Gator gymnastics team 
+pic:https://www.courtneymims.com/images/BaumannAlyssa_180209_8662_CourtneyMims.jpg
+
 
