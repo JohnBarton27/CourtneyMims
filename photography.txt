@@ -42,5 +42,6 @@ pic:https://www.courtneymims.com/images/BaumannAlyssa_180209_8662_CourtneyMims.j
 
 section:Volleyball Photos 
 description:Photos of the Gator volleyball team
+pic:https://www.courtneymims.com/images/
 pic:https://www.courtneymims.com/images/Cheyenne_Huskey_DL.jpg
 
