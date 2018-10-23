@@ -15,8 +15,8 @@ pic:https://www.courtneymims.com/images/HelmetDetail_180915_8741_CourtneyMims.jp
 
 section:Soccer Photos
 description:Photos of the Gator soccer team 
-pic:https://www.courtneymims.com/images/_180831_3694_CourtneyMims.jpg
-pic:https://www.courtneymims.com/images/_180831_3523_CourtneyMims.jpg
+pic:https://www.courtneymims.com/images/Goalie_CourtneyMims.jpg
+pic:https://www.courtneymims.com/images/UCLA_CourtneyMims.jpg
 pic:https://www.courtneymims.com/images/22860020_1955488964776026_4564023049224617863_o.jpg
 
 section:Baseball Photos 
